@@ -1,0 +1,537 @@
+
+/* =====================================
+   CONTACT PAGE - AHINOVVERSE
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    font-family: 'Inter', sans-serif;
+    color: #172554;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =====================================
+   HERO SECTION
+===================================== */
+
+.contact-hero {
+    min-height: 520px;
+    padding: 85px 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    background:
+        radial-gradient(circle at 80% 30%, #e9e7ff 0%, transparent 30%),
+        linear-gradient(120deg, #ffffff, #f0f6ff);
+    overflow: hidden;
+}
+
+.contact-hero-content {
+    max-width: 620px;
+}
+
+.contact-tag,
+.section-label {
+    display: inline-block;
+    color: #2563eb;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2.5px;
+    margin-bottom: 18px;
+}
+
+.contact-tag i {
+    margin-right: 8px;
+}
+
+.contact-hero h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.2;
+    margin: 0 0 22px;
+    color: #172554;
+}
+
+.contact-hero h1 span,
+.contact-section-heading h2 span,
+.message-content h2 span {
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.contact-hero-content p {
+    color: #64748b;
+    line-height: 1.9;
+    font-size: 16px;
+    max-width: 550px;
+}
+
+.contact-hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 32px;
+}
+
+.contact-primary-btn,
+.contact-secondary-btn,
+.message-button {
+    padding: 14px 24px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: 0.3s ease;
+}
+
+.contact-primary-btn {
+    color: white;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+.contact-secondary-btn {
+    color: #2563eb;
+    border: 1px solid #cbd5e1;
+    background: white;
+}
+
+.contact-primary-btn:hover,
+.message-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(37, 99, 235, 0.25);
+}
+
+.contact-secondary-btn:hover {
+    background: #eaf2ff;
+    transform: translateY(-4px);
+}
+
+/* =====================================
+   HERO VISUAL
+===================================== */
+
+.contact-hero-visual {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-orbit {
+    position: absolute;
+    border: 1px solid rgba(37, 99, 235, 0.2);
+    border-radius: 50%;
+}
+
+.orbit-one {
+    width: 280px;
+    height: 280px;
+    animation: rotateOrbit 18s linear infinite;
+}
+
+.orbit-two {
+    width: 220px;
+    height: 220px;
+    border-color: rgba(124, 58, 237, 0.3);
+    animation: rotateOrbit 12s linear infinite reverse;
+}
+
+.contact-center-icon {
+    width: 125px;
+    height: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 35px;
+    font-size: 48px;
+    color: white;
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+    box-shadow: 0 20px 45px rgba(37, 99, 235, 0.3);
+    transform: rotate(-8deg);
+    z-index: 2;
+}
+
+.floating-contact-icon {
+    position: absolute;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: white;
+    color: #2563eb;
+    font-size: 22px;
+    box-shadow: 0 8px 25px rgba(23, 37, 84, 0.12);
+    z-index: 3;
+    animation: floatIcon 3s ease-in-out infinite;
+}
+
+.icon-one {
+    top: 35px;
+    right: 30px;
+}
+
+.icon-two {
+    bottom: 35px;
+    left: 20px;
+    color: #7c3aed;
+    animation-delay: 0.5s;
+}
+
+.icon-three {
+    top: 135px;
+    left: 0;
+    color: #06b6d4;
+    animation-delay: 1s;
+}
+
+@keyframes rotateOrbit {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes floatIcon {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+/* =====================================
+   CONTACT DETAILS SECTION
+===================================== */
+
+.contact-section {
+    padding: 90px 9%;
+    background: #ffffff;
+}
+
+.contact-section-heading {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.contact-section-heading h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(25px, 3vw, 36px);
+    line-height: 1.4;
+    margin: 0 0 15px;
+}
+
+.contact-section-heading p {
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    max-width: 1150px;
+    margin: auto;
+}
+
+.contact-card {
+    padding: 32px 25px;
+    border: 1px solid #e2e8f0;
+    border-radius: 18px;
+    background: #ffffff;
+    box-shadow: 0 8px 25px rgba(37, 99, 235, 0.05);
+    transition: 0.3s ease;
+}
+
+.contact-card:hover {
+    transform: translateY(-8px);
+    border-color: #93c5fd;
+    box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+}
+
+.contact-card-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 23px;
+    margin-bottom: 24px;
+}
+
+.blue-icon {
+    color: #2563eb;
+    background: #eaf2ff;
+}
+
+.purple-icon {
+    color: #7c3aed;
+    background: #f1eaff;
+}
+
+.cyan-icon {
+    color: #0891b2;
+    background: #e0faff;
+}
+
+.contact-card h3 {
+    font-size: 19px;
+    margin: 0 0 12px;
+    color: #172554;
+}
+
+.contact-card p {
+    color: #64748b;
+    font-size: 13px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.contact-card a,
+.contact-detail {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    overflow-wrap: anywhere;
+}
+
+.contact-card a i {
+    margin-left: 5px;
+    font-size: 11px;
+}
+
+.contact-card a:hover {
+    color: #7c3aed;
+}
+
+/* =====================================
+   CONTACT MESSAGE SECTION
+===================================== */
+
+.contact-message-section {
+    padding: 50px 9% 90px;
+    background: #ffffff;
+}
+
+.contact-message-box {
+    max-width: 1150px;
+    margin: auto;
+    padding: 55px 60px;
+    border-radius: 25px;
+    background: linear-gradient(120deg, #eaf2ff, #f3edff);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.message-content {
+    max-width: 650px;
+    position: relative;
+    z-index: 2;
+}
+
+.message-content h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: clamp(25px, 3vw, 36px);
+    line-height: 1.5;
+    margin: 0 0 15px;
+}
+
+.message-content p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 25px;
+}
+
+.message-button {
+    color: white;
+    background: linear-gradient(90deg, #2563eb, #7c3aed);
+}
+
+.message-decoration {
+    width: 160px;
+    height: 160px;
+    min-width: 160px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.7);
+    color: #7c3aed;
+    font-size: 65px;
+    transform: rotate(-12deg);
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.contact-footer {
+    padding: 25px 9%;
+    background: #f5f8ff;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.contact-footer p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.contact-footer p span {
+    color: #2563eb;
+    font-weight: 800;
+}
+
+.contact-footer a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.contact-footer a:hover {
+    color: #7c3aed;
+}
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+@media (max-width: 1000px) {
+
+    .contact-hero {
+        padding: 70px 6%;
+    }
+
+    .contact-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-hero-visual {
+        transform: scale(0.85);
+    }
+}
+
+@media (max-width: 768px) {
+
+    .contact-hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 70px 6% 40px;
+    }
+
+    .contact-hero-content {
+        margin: auto;
+    }
+
+    .contact-hero-content p {
+        margin: auto;
+    }
+
+    .contact-hero-buttons {
+        justify-content: center;
+    }
+
+    .contact-hero-visual {
+        margin-top: 15px;
+        transform: scale(0.85);
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-message-box {
+        padding: 40px 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .message-content {
+        margin: auto;
+    }
+
+    .message-button {
+        margin: auto;
+    }
+
+    .message-decoration {
+        width: 110px;
+        height: 110px;
+        min-width: 110px;
+        font-size: 45px;
+    }
+
+    .contact-footer {
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .contact-hero h1 {
+        font-size: 35px;
+    }
+
+    .contact-hero-visual {
+        transform: scale(0.75);
+        margin-top: -10px;
+        margin-bottom: -30px;
+    }
+
+    .contact-section,
+    .contact-message-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .contact-card {
+        padding: 25px 20px;
+    }
+
+    .contact-message-box {
+        padding: 35px 22px;
+    }
+
+    .contact-footer {
+        padding: 22px 5%;
+    }
+}
