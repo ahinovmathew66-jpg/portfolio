@@ -687,3 +687,21 @@
         transition: none;
     }
 }
+
+/* DATA ANALYSIS AND MACHINE LEARNING */
+.data-card .technology-icon {
+    background: #eee8ff;
+    color: #7853c8;
+}
+
+/* GITHUB AND VERSION CONTROL */
+.github-card .technology-icon {
+    background: #e9efff;
+    color: #3159c9;
+}
+
+/* DEPLOYMENT AND HOSTING */
+.hosting-card .technology-icon {
+    background: #e5f7ed;
+    color: #15945b;
+}
